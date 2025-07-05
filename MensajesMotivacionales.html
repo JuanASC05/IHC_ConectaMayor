@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mensajes Motivacionales</title>
+    <link rel="stylesheet" href="MensajesMotivacionales.css" />
+  </head>
+  <body>
+    <section class="seccion-mensajes">
+      <h2>📨 Mensajes Motivacionales</h2>
+
+      <form id="formMensajes">
+        <label for="mensaje">Mensaje:</label>
+        <textarea
+          id="mensaje"
+          required
+          placeholder="Escribe un mensaje motivacional..."
+        ></textarea>
+
+        <label for="fecha">Fecha de envío:</label>
+        <input type="date" id="fecha" required />
+
+        <label for="hora">Hora de envío:</label>
+        <input type="time" id="hora" required />
+
+        <label for="frecuencia">Frecuencia:</label>
+        <select id="frecuencia">
+          <option value="una_vez">Una vez</option>
+          <option value="diario">Diario</option>
+          <option value="semanal">Semanal</option>
+        </select>
+
+        <button type="submit">Programar mensaje</button>
+      </form>
+
+      <div class="mensaje-confirmacion" id="confirmacion" style="display: none">
+        ✅ Mensaje programado con éxito.
+      </div>
+    </section>
+
+    <script src="MensajesMotivacionales.js"></script>
+  </body>
+</html>

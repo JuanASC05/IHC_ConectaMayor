@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Marko+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Habibi&family=Marko+One&display=swap");
 
 body {
-  font-family: 'Habibi', serif;
-  background-color: #A1D6A0;
+  font-family: "Habibi", serif;
+  background-color: #a1d6a0;
   margin: 0;
   padding: 1rem;
   color: #000;
 }
 
 h2 {
-  font-family: 'Marko One', serif;
+  font-family: "Marko One", serif;
   font-size: 28px;
   text-align: center;
   margin-bottom: 1rem;
 }
 
 h4 {
-  font-family: 'Marko One', serif;
+  font-family: "Marko One", serif;
   font-size: 20px;
   margin-bottom: 0.5rem;
 }
@@ -35,7 +35,7 @@ h4 {
 }
 
 .Actividades {
-  background-color: #D9F1FF;
+  background-color: #d9f1ff;
   padding: 1rem;
   border-radius: 10px;
   font-size: 14px;
@@ -51,7 +51,7 @@ h4 {
 
 .Progreso a {
   font-size: 14px;
-  color: #5A90C5;
+  color: #5a90c5;
   text-decoration: none;
 }
 
@@ -60,7 +60,7 @@ h4 {
 }
 
 .Video {
-  background-color: #E0F5DC;
+  background-color: #e0f5dc;
   height: 150px;
   border-radius: 12px;
   margin-bottom: 1rem;
@@ -68,9 +68,9 @@ h4 {
 
 button,
 buttom {
-  background-color: #5A90C5;
+  background-color: #5a90c5;
   color: black;
-  font-family: 'Habibi', serif;
+  font-family: "Habibi", serif;
   border: none;
   padding: 0.75rem 1.5rem;
   border-radius: 45px;
@@ -93,11 +93,61 @@ buttom:hover {
   padding: 1rem;
   border-radius: 12px;
   margin-bottom: 1rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .leccion p {
   font-size: 14px;
   margin-bottom: 0.5rem;
   line-height: 1.5;
+}
+.valoracion-curso {
+  background-color: #fdfce5;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.valoracion-curso h3 {
+  font-size: 1.4rem;
+  color: #4d4d4d;
+  margin-bottom: 1rem;
+}
+
+.estrellas span {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.estrellas span:hover,
+.estrellas span.hovered {
+  color: #f5b301;
+}
+
+.valoracion-curso textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.boton-valorar {
+  background-color: #66cdaa;
+  color: white;
+  padding: 0.8rem 2rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.boton-valorar:hover {
+  background-color: #57b899;
 }

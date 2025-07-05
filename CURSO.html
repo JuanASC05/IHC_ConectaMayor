@@ -58,6 +58,51 @@
                 aplicando las herramientas en la vida cotidiana.</p>
                 <buttom type="submit">Empezar con I.A</buttom>
         </div>
+        
     </section>
+    <section class="valoracion-curso">
+        <h3>¿Qué te pareció este curso?</h3>
+        <div class="estrellas">
+          <span>⭐</span>
+          <span>⭐</span>
+          <span>⭐</span>
+          <span>⭐</span>
+          <span>⭐</span>
+        </div>
+      
+        <textarea placeholder="Escribe un comentario opcional sobre tu experiencia..."></textarea>
+      
+        <button class="boton-valorar">Enviar valoración</button>
+      
+        <p class="mensaje-valorado" style="display: none; color: green; margin-top: 1rem;">
+          ¡Gracias! Ya valoraste este curso. 🙌
+        </p>
+      </section>
+      <script>
+        let valorado = false;
+        const estrellas = document.querySelectorAll('.estrellas span');
+        const boton = document.querySelector('.boton-valorar');
+        const mensaje = document.querySelector('.mensaje-valorado');
+      
+        estrellas.forEach((estrella, index) => {
+          estrella.addEventListener('click', () => {
+            if (valorado) return;
+      
+            estrellas.forEach((e, i) => {
+              e.classList.toggle('hovered', i <= index);
+            });
+          });
+        });
+      
+        boton.addEventListener('click', () => {
+          if (!valorado) {
+            valorado = true;
+            boton.disabled = true;
+            boton.style.backgroundColor = '#ccc';
+            mensaje.style.display = 'block';
+          }
+        });
+      </script>
+      
   </body>
 </html>

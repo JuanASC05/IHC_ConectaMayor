@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configuración de Notificaciones</title>
+    <link rel="stylesheet" href="configNotificaciones.css" />
+  </head>
+  <body>
+    <section class="configuracion">
+      <h2>Configuración de Notificaciones</h2>
+      <p>Elige cómo deseas recibir las notificaciones:</p>
+
+      <div class="opcion">
+        <label
+          ><input type="checkbox" checked /> Notificaciones generales</label
+        >
+      </div>
+
+      <div class="opcion">
+        <label><input type="checkbox" checked /> Recordatorios de cursos</label>
+      </div>
+
+      <div class="opcion">
+        <label><input type="checkbox" /> Check-in emocional diario</label>
+      </div>
+
+      <h3>Canal de notificación preferido</h3>
+      <select>
+        <option value="sonido">Sonido</option>
+        <option value="vibracion">Vibración</option>
+        <option value="correo">Correo electrónico</option>
+        <option value="silencio">Silencio</option>
+      </select>
+
+      <br /><br />
+      <button class="guardar-btn">
+        <a href="paginaInicioAdulto.html">Guardar cambios</a>
+      </button>
+      <hr />
+      <h3>Recordatorios diarios personalizados</h3>
+      <p>
+        Establece una hora para que la app te recuerde registrar cómo te
+        sientes.
+      </p>
+
+      <div class="recordatorio-config">
+        <label for="horaRecordatorio">Selecciona la hora:</label>
+        <input type="time" id="horaRecordatorio" />
+        <button onclick="agregarRecordatorio()" class="agregar-btn">
+          Agregar
+        </button>
+      </div>
+
+      <ul id="listaRecordatorios" class="lista-recordatorios">
+        <!-- Aquí se mostrarán los recordatorios -->
+      </ul>
+    </section>
+    <script>
+      function agregarRecordatorio() {
+        const hora = document.getElementById("horaRecordatorio").value;
+        if (!hora) {
+          alert("Por favor, selecciona una hora.");
+          return;
+        }
+
+        const lista = document.getElementById("listaRecordatorios");
+        const nuevoItem = document.createElement("li");
+        nuevoItem.textContent = `📅 Recordatorio diario a las ${hora} - "¿Cómo te sientes hoy?"`;
+        lista.appendChild(nuevoItem);
+
+        document.getElementById("horaRecordatorio").value = ""; // limpiar input
+      }
+    </script>
+  </body>
+</html>

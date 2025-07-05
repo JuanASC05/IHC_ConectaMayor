@@ -1,0 +1,95 @@
+body {
+  background-color: #a1d6a0;
+  font-family: "Segoe UI", sans-serif;
+  padding: 2rem;
+}
+
+.configuracion {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2,
+h3 {
+  color: #25664d;
+}
+
+.opcion {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.guardar-btn {
+  background-color: #66cdaa;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.guardar-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.guardar-btn:hover {
+  background-color: #57b899;
+}
+.recordatorio-config {
+  background-color: #eafaf1;
+  border: 1px solid #b2dfdb;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.recordatorio-config input[type="time"] {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.agregar-btn {
+  background-color: #98c1b6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.agregar-btn:hover {
+  background-color: #76b2a2;
+}
+
+.lista-recordatorios {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.lista-recordatorios li {
+  background-color: #f3f9f7;
+  border-left: 4px solid #66cdaa;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}

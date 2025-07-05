@@ -12,7 +12,8 @@
         <img src="img/LOGO_SiempreContigo.png" alt="logo" />
         <ul class="nav-links">
           <li><a href="SobreNosotros.html">Sobre nosotros</a></li>
-          <li><a href="AgregarCurso.html">Agregar curso</a></li>
+          <li><a href="InscripcionCurso.html">Agregar curso</a></li>
+          <li><a href="BeneficiosAdulto.html">Beneficios</a></li>
         </ul>
       </div>
 
@@ -29,7 +30,18 @@
         <a href="#"
           ><img src="img/menuHamburguesa_icono.png" alt="menu" class="icono"
         /></a>
+        <a href="configNotificaciones.html">
+          <img
+            src="img/icono-configuracion.png"
+            alt="configuración"
+            class="icono"
+          />
+        </a>
       </div>
+      <a href="chatPaciente.html" class="boton-chat-header">💬 Chat</a>
+      <a href="RedApoyo.html" class="boton-apoyo-header">🤝 Red de Apoyo</a>
+
+      <!-- en paginaInicioAdulto.html -->
     </nav>
 
     <section class="Pag-inicio">
@@ -70,7 +82,7 @@
             <li>Acompañado por I.A</li>
             <li>4 sesiones - actividades</li>
           </div>
-          <button type="button"><a href="curso.hmtl">INICIAR</a></button>
+          <a href="CURSO.html" class="boton-iniciar">INICIAR</a>
         </div>
 
         <div class="curso">
@@ -80,7 +92,7 @@
             <li>Acompañado por I.A</li>
             <li>10 sesiones - actividades</li>
           </div>
-          <button type="button"><a href="curso.hmtl">INICIAR</a></button>
+          <a href="CURSO.html" class="boton-iniciar">INICIAR</a>
         </div>
 
         <div class="curso">
@@ -90,7 +102,7 @@
             <li>Acompañado por I.A</li>
             <li>7 sesiones - actividades</li>
           </div>
-          <button type="button"><a href="curso.hmtl">INICIAR</a></button>
+          <a href="CURSO.html" class="boton-iniciar">INICIAR</a>
         </div>
 
         <div class="curso">
@@ -100,8 +112,116 @@
             <li>Acompañado por I.A</li>
             <li>6 sesiones - actividades</li>
           </div>
-          <button type="button"><a href="curso.hmtl">INICIAR</a></button>
+          <a href="CURSO.html" class="boton-iniciar">INICIAR</a>
         </div>
+      </div>
+      <div class="chatbot-inicio">
+        <h2>¿Necesitas hablar?</h2>
+        <p>
+          Haz clic abajo para iniciar una conversación con nuestro asistente
+          virtual
+        </p>
+        <button onclick="location.href='chatAsistente.html'" class="boton-chat">
+          Iniciar conversación con asistente
+        </button>
+      </div>
+      <div class="registro-emocional">
+        <h2>¿Cómo te sientes hoy?</h2>
+        <p>
+          Registra tu estado emocional diario para que podamos ayudarte mejor
+        </p>
+        <button onclick="location.href='emocion.html'" class="boton-emocion">
+          Registrar estado emocional
+        </button>
+      </div>
+      <div class="notificacion-curso">
+        <h3>¡Nuevo curso disponible!</h3>
+        <p>
+          Hemos agregado el curso
+          <strong>"Mindfulness para el día a día"</strong>.
+        </p>
+        <button class="boton-acceder-nuevo-curso">
+          <a href="CURSO.html">Acceder al curso</a>
+        </button>
+      </div>
+      <div class="resumen-emocional">
+        <h2>¿Quieres ver cómo te has sentido esta semana?</h2>
+        <button
+          onclick="location.href='resumenEmocional.html'"
+          class="boton-resumen"
+        >
+          Ver resumen emocional semanal
+        </button>
+      </div>
+    </section>
+    <a href="Testimonios.html" class="boton-testimonios"
+      >Ver testimonios de otros usuarios</a
+    >
+    <a href="Contacto.html" class="icono-contacto" title="Contáctanos">
+      <img src="img/icono_contacto.png" alt="Contacto" />
+    </a>
+    <section class="carrusel">
+      <button class="flecha" id="prev">&#10094;</button>
+
+      <div class="carrusel-imagenes">
+        <img
+          src="img/app1.jpeg"
+          class="imagen-carrusel visible"
+          alt="Captura app 1"
+        />
+        <img src="img/app2.jpeg" class="imagen-carrusel" alt="Captura app 2" />
+        <img src="img/app3.jpeg" class="imagen-carrusel" alt="Captura app 3" />
+      </div>
+
+      <button class="flecha" id="next">&#10095;</button>
+      <script>
+        const imagenes = document.querySelectorAll(".imagen-carrusel");
+        let actual = 0;
+
+        function mostrarImagen(index) {
+          imagenes.forEach((img, i) => {
+            img.classList.toggle("visible", i === index);
+          });
+        }
+
+        document.getElementById("next").addEventListener("click", () => {
+          actual = (actual + 1) % imagenes.length;
+          mostrarImagen(actual);
+        });
+
+        document.getElementById("prev").addEventListener("click", () => {
+          actual = (actual - 1 + imagenes.length) % imagenes.length;
+          mostrarImagen(actual);
+        });
+
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowRight") {
+            actual = (actual + 1) % imagenes.length;
+            mostrarImagen(actual);
+          } else if (e.key === "ArrowLeft") {
+            actual = (actual - 1 + imagenes.length) % imagenes.length;
+            mostrarImagen(actual);
+          }
+        });
+      </script>
+    </section>
+    <section class="seccion-descarga">
+      <p>Disponible en móviles y tablets</p>
+      <div class="logos-descarga">
+        <a href="#" title="Descargar en Google Play">
+          <img
+            src="img/logo-googleplay.png"
+            alt="Google Play"
+            class="logo-store"
+          />
+        </a>
+        <a href="#" title="Descargar en App Store">
+          <img
+            src="img/logo-appstore.jpeg"
+            alt="App Store"
+            class="logo-store"
+          />
+        </a>
       </div>
     </section>
   </body>

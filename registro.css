@@ -96,6 +96,32 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.ayuda-familiar {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.boton-familiar {
+  background-color: #b2e5d6; /* verde pastel */
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-familiar a {
+  text-decoration: none;
+  color: #2f4f4f; /* gris verdoso para legibilidad */
+  display: inline-block;
+  width: 100%;
+}
+
+.boton-familiar:hover {
+  background-color: #a0d9cc; /* tono más fuerte al pasar el mouse */
+}
 
 /* Responsive para móviles */
 @media (max-width: 480px) {

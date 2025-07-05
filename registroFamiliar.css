@@ -1,0 +1,81 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #a1d6a0; /* verde claro */
+  margin: 0;
+  padding: 20px;
+}
+
+.registro-ayuda {
+  background-color: #5a90c5;
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 128, 0, 0.1);
+}
+
+.registro-ayuda h2 {
+  color: #2e7d32;
+  text-align: center;
+}
+
+.registro-ayuda p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.form-ayuda .form-grupo {
+  margin-bottom: 15px;
+}
+
+.form-grupo label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-grupo input[type="text"],
+.form-grupo input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b2dfdb;
+  border-radius: 8px;
+  background-color: #f1fff5;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #66bb6a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4caf50;
+}
+
+.boton-finalizar {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.boton-finalizar:hover {
+  background-color: #45a049;
+}

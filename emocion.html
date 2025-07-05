@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¿Cómo te sientes hoy?</title>
+    <link rel="stylesheet" href="emocion.css" />
+  </head>
+  <body>
+    <div class="emocion-container">
+      <h1>¿Cómo te sientes hoy?</h1>
+      <div class="emociones">
+        <button class="emocion" data-emocion="Feliz">😊<br />Feliz</button>
+        <button class="emocion" data-emocion="Triste">😢<br />Triste</button>
+        <button class="emocion" data-emocion="Ansioso">😰<br />Ansioso</button>
+        <button class="emocion" data-emocion="Motivado">
+          💪<br />Motivado
+        </button>
+        <button class="emocion" data-emocion="Solo">😔<br />Solo</button>
+      </div>
+      <p id="respuesta"></p>
+    </div>
+    <script src="js/emocion.js"></script>
+    <div class="lectura-voz">
+      <h3>¿Quieres que leamos cómo te sientes?</h3>
+
+      <label>
+        <input type="checkbox" id="activarLectura" />
+        Activar lectura automática
+      </label>
+
+      <button onclick="leerEstadoEmocional()" class="boton-voz">
+        Leer en voz alta
+      </button>
+
+      <p id="estadoRegistrado" style="display: none">
+        Hoy te sientes tranquilo y agradecido. Es un buen momento para respirar
+        profundo y disfrutar lo simple.
+      </p>
+    </div>
+    <script>
+      function leerEstadoEmocional() {
+        const texto = document.getElementById("estadoRegistrado").innerText;
+        const lecturaActiva = document.getElementById("activarLectura").checked;
+
+        if (lecturaActiva && texto) {
+          const mensaje = new SpeechSynthesisUtterance(texto);
+          mensaje.lang = "es-ES";
+          mensaje.rate = 0.9;
+          mensaje.pitch = 1;
+          speechSynthesis.speak(mensaje);
+        } else {
+          alert("Activa la lectura automática para usar esta función.");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+/* emocion.css */
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #e7f9ec; /* verde pastel suave */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+h1 {
+  color: #2d4739;
+  margin-bottom: 1.5rem;
+}
+
+.emotions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.emotion {
+  background-color: #d8f3dc;
+  border: 2px solid #95d5b2;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  font-size: 1.2rem;
+}
+
+.emotion:hover {
+  transform: scale(1.05);
+  background-color: #b7e4c7;
+}
+
+.selected {
+  border: 3px solid #40916c;
+  background-color: #b7e4c7;
+}
+
+button {
+  background-color: #52b788;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #40916c;
+}
+
+#respuesta {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #2d4739;
+}
+.lectura-voz {
+  background-color: #f3e5f5; /* lila pastel */
+  border: 2px solid #d1c4e9;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.lectura-voz h3 {
+  color: #6a1b9a;
+  margin-bottom: 15px;
+}
+
+.boton-voz {
+  background-color: #ba68c8;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-voz:hover {
+  background-color: #9c27b0;
+}

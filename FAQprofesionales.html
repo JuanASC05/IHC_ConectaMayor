@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preguntas Frecuentes - Profesionales</title>
+    <link rel="stylesheet" href="faqProf.css" />
+  </head>
+  <body>
+    <section class="faq-container">
+      <h2>Preguntas Frecuentes</h2>
+
+      <div class="faq-item">
+        <button class="faq-question">¿Cómo agrego un nuevo curso?</button>
+        <div class="faq-answer">
+          <p>
+            Desde la sección "Agregar curso" puedes completar los datos y
+            adjuntar contenido audiovisual y textual.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          ¿Puedo contactar directamente a mis pacientes?
+        </button>
+        <div class="faq-answer">
+          <p>
+            Sí, puedes usar la función de chat seguro en la página principal del
+            profesional.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          ¿Cómo programo mensajes automáticos?
+        </button>
+        <div class="faq-answer">
+          <p>
+            En la opción “Mensajes automáticos” puedes redactar, seleccionar
+            fecha y frecuencia de envío para cada paciente.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          ¿Cómo configuro las notificaciones?
+        </button>
+        <div class="faq-answer">
+          <p>
+            Dirígete al ícono de configuración (⚙️) y allí podrás ajustar el
+            tipo de alertas que deseas recibir.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const questions = document.querySelectorAll(".faq-question");
+      questions.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          btn.classList.toggle("active");
+          const answer = btn.nextElementSibling;
+          answer.style.display =
+            answer.style.display === "block" ? "none" : "block";
+        });
+      });
+    </script>
+  </body>
+</html>

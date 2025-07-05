@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Habibi&family=Marko+One&display=swap");
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: "Habibi", serif;
+  background-color: #f0f8e0;
+}
+
+.seccion-testimonios {
+  text-align: center;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.seccion-testimonios h2 {
+  font-family: "Marko One", serif;
+  color: #2d4739;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.testimonios-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.testimonio {
+  background-color: white;
+  border-radius: 15px;
+  padding: 1rem;
+  max-width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonio img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.testimonio p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.testimonio strong {
+  font-size: 0.95rem;
+  color: #5a90c5;
+}
+
+.volver-inicio {
+  margin-top: 2rem;
+}
+
+.volver-inicio a {
+  color: #5a90c5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.volver-inicio a:hover {
+  text-decoration: underline;
+}
+
+/* Botón desde página principal */
+.boton-testimonios {
+  display: inline-block;
+  background-color: #74c69d;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 2rem;
+}
+
+.boton-testimonios:hover {
+  background-color: #52b788;
+}

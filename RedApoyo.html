@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red de Apoyo</title>
+    <link rel="stylesheet" href="RedApoyo.css" />
+  </head>
+  <body>
+    <section class="red-apoyo">
+      <h2>Red de Apoyo entre Adultos Mayores</h2>
+
+      <div class="filtros">
+        <label for="interes">Filtrar por interés:</label>
+        <select id="interes">
+          <option value="todos">Todos</option>
+          <option value="arte">Arte</option>
+          <option value="meditacion">Meditación</option>
+          <option value="lectura">Lectura</option>
+          <option value="musica">Música</option>
+        </select>
+      </div>
+
+      <div class="perfiles">
+        <div class="perfil">
+          <img src="img/perfil1.jpeg" alt="perfil1" />
+          <h3>Carmen Ruiz</h3>
+          <p>Interés: Meditación</p>
+          <button class="btn-conectar">Conectar</button>
+        </div>
+        <div class="perfil">
+          <img src="img/perfil2.jpeg" alt="perfil2" />
+          <h3>Eduardo León</h3>
+          <p>Interés: Arte</p>
+          <button class="btn-conectar">Conectar</button>
+        </div>
+        <div class="perfil">
+          <img src="img/perfil3.jpeg" alt="perfil3" />
+          <h3>Lucía Herrera</h3>
+          <p>Interés: Lectura</p>
+          <button class="btn-conectar">Conectar</button>
+        </div>
+      </div>
+
+      <p class="moderacion">
+        * Las conversaciones están moderadas para garantizar un entorno seguro.
+      </p>
+      <div id="chat-simulado" class="chat-simulado" style="display: none">
+        <h3>Chat con otro adulto mayor</h3>
+        <div class="chat-mensajes">
+          <p class="mensaje-otro">Hola, ¿cómo estás hoy?</p>
+          <p class="mensaje-propio">
+            Hola 😊 Me siento mejor, gracias por preguntar.
+          </p>
+        </div>
+        <div class="chat-input">
+          <input type="text" placeholder="Escribe un mensaje..." />
+          <button>Enviar</button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const selectInteres = document.getElementById("interes");
+      const perfiles = document.querySelectorAll(".perfil");
+
+      selectInteres.addEventListener("change", () => {
+        const valorSeleccionado = selectInteres.value;
+
+        perfiles.forEach((perfil) => {
+          const interes = perfil.querySelector("p").textContent.toLowerCase();
+          if (
+            valorSeleccionado === "todos" ||
+            interes.includes(valorSeleccionado)
+          ) {
+            perfil.style.display = "block";
+          } else {
+            perfil.style.display = "none";
+          }
+        });
+      });
+    </script>
+    <script>
+      // Mostrar chat cuando se presiona cualquier botón de conectar
+      const botonesConectar = document.querySelectorAll(".perfil button");
+      const chatSimulado = document.getElementById("chat-simulado");
+
+      botonesConectar.forEach((boton) => {
+        boton.addEventListener("click", () => {
+          chatSimulado.style.display = "block";
+          chatSimulado.scrollIntoView({ behavior: "smooth" });
+        });
+      });
+    </script>
+  </body>
+</html>

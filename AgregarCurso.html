@@ -52,6 +52,68 @@
       <button type="submit">
         <a href="paginaInicioPROFESIONAL.html">Implementar curso</a>
       </button>
+      <hr />
+      <div class="asignar-curso">
+        <h3>Asignar curso a usuarios</h3>
+
+        <div class="form-adulto">
+          <label for="usuario">Seleccionar usuario:</label>
+          <select id="usuario">
+            <option value="">-- Selecciona un usuario --</option>
+            <option value="juana">Juana López</option>
+            <option value="carlos">Carlos Ruiz</option>
+            <option value="ana">Ana Gómez</option>
+            <!-- Puedes agregar más opciones o cargarlas dinámicamente -->
+          </select>
+        </div>
+
+        <div class="form-adulto">
+          <label for="curso">Seleccionar curso(s):</label>
+          <select id="curso" multiple size="4">
+            <option value="bienestar">Bienestar emocional</option>
+            <option value="relaciones">Relaciones saludables</option>
+            <option value="autoestima">Autoestima y autovaloración</option>
+            <option value="memoria">Memoria activa</option>
+          </select>
+          <p>
+            <small
+              >Puedes mantener presionada Ctrl (Windows) o Cmd (Mac) para
+              seleccionar varios cursos</small
+            >
+          </p>
+        </div>
+
+        <button type="button" onclick="asignarCursos()">
+          Asignar Curso(s)
+        </button>
+
+        <div
+          id="mensajeConfirmacion"
+          style="margin-top: 10px; color: green"
+        ></div>
+      </div>
     </section>
+    <script>
+      function asignarCursos() {
+        const usuario = document.getElementById("usuario").value;
+        const cursosSeleccionados = Array.from(
+          document.getElementById("curso").selectedOptions
+        ).map((option) => option.text);
+        const mensajeDiv = document.getElementById("mensajeConfirmacion");
+
+        if (!usuario || cursosSeleccionados.length === 0) {
+          mensajeDiv.style.color = "red";
+          mensajeDiv.innerText =
+            "Por favor, selecciona un usuario y al menos un curso.";
+          return;
+        }
+
+        // Simulación de asignación (puedes conectar con backend real más adelante)
+        mensajeDiv.style.color = "green";
+        mensajeDiv.innerText = `Se asignó correctamente ${
+          cursosSeleccionados.length > 1 ? "los cursos" : "el curso"
+        } a ${usuario}.`;
+      }
+    </script>
   </body>
 </html>

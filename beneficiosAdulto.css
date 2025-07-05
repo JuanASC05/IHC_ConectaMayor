@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Habibi&display=swap");
+
+body {
+  font-family: "Habibi", serif;
+  background-color: #e7f7e5;
+  margin: 0;
+  padding: 2rem;
+}
+
+.beneficios {
+  max-width: 900px;
+  margin: auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.beneficios h2 {
+  text-align: center;
+  color: #4178ad;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.beneficio {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background-color: #f1fff0;
+  padding: 1rem;
+  border-radius: 15px;
+  border-left: 6px solid #74c69d;
+}
+
+.beneficio img {
+  width: 60px;
+  height: 60px;
+}
+
+.beneficio h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #25664d;
+}
+
+.beneficio p {
+  margin: 0.2rem 0 0 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.volver {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.volver a {
+  text-decoration: none;
+  color: #4178ad;
+  font-weight: bold;
+}
+
+.volver a:hover {
+  text-decoration: underline;
+}

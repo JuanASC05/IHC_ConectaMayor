@@ -93,3 +93,38 @@ body {
   font-size: 15px;
   text-align: center;
 }
+.barra-busqueda-curso {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.barra-busqueda-curso label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.barra-busqueda-curso input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.boton-buscar {
+  background-color: #888;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: not-allowed;
+}

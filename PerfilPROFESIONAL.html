@@ -70,29 +70,20 @@
     <h3>Agendar nueva cita</h3>
     <form>
       <label for="fecha">Fecha:</label><br />
-      <input type="date" id="fecha" name="fecha" required /><br /><br />
+      <input type="date" id="fecha" name="fecha"  /><br /><br />
   
       <label for="hora">Hora:</label><br />
-      <input type="time" id="hora" name="hora" required /><br /><br />
+      <input type="time" id="hora" name="hora"  /><br /><br />
   
       <label for="motivo">Motivo de la cita:</label><br />
-      <textarea id="motivo" name="motivo" rows="4" cols="40" required></textarea><br /><br />
+      <textarea id="motivo" name="motivo" rows="4" cols="40" ></textarea><br /><br />
   
       <button type="submit">Confirmar cita</button>
     </form>
   </div>
   
     </section>
-    <script>
-        const btn = document.querySelector('button[type="submit"]');
-        const form = document.getElementById("formulario-cita");
-      
-        btn.addEventListener("click", (e) => {
-          e.preventDefault();
-          form.style.display = "block";
-          btn.style.display = "none";
-        });
-      </script>
-      
+   
+          <script src="validacionAgendarcita..js"></script>
 </body>
 </html>

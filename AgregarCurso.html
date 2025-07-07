@@ -14,44 +14,41 @@
     </nav>
 
     <section class="contenido">
-      <form class="contenido">
+      <form id="formularioAgregarCurso" class="formulario-agregarCurso">
         <div class="form-adulto">
-          <label for="NombreCurso" om>Nombre del curso:</label>
+          <label for="NombreCurso">Nombre del curso:</label>
           <input type="text" id="NombreCurso" name="NombreCurso" />
         </div>
         <hr />
         <div class="form-adulto">
-          <label for="Descripcion">Descripcion del curso:</label>
+          <label for="Descripcion">Descripción del curso:</label>
           <input type="text" id="Descripcion" name="Descripcion" />
         </div>
         <hr />
         <div class="form-adulto">
-          <label for="Objetivo">Objetivo del curso: </label>
-          <input type="password" id="Objetivo" name="Objetivo" />
+          <label for="Objetivo">Objetivo del curso:</label>
+          <input type="text" id="Objetivo" name="Objetivo" />
         </div>
+        <hr />
+        <button type="submit">Agregar curso</button>
       </form>
 
-      <form class="actividades">
-        <div class="form-adulto">
-          <label for="NombreActividad" om>Nombre de la actividad:</label>
-          <input type="text" id="NombreActividad" name="NombreActividad" />
+      <form class="formulario-actividad" id="formularioActividad">
+        <div class="form-actividad">
+          <label for="Nom-actividad">Nombre de la actividad:</label>
+          <input type="text" id="Nom-actividad" name="Nom-actividad" />
         </div>
-        <hr />
-        <div class="form-adulto">
-          <label for="Descripcion">Descripcion de la actividad:</label>
-          <input type="text" id="Descripcion" name="Descripcion" />
+        <div class="form-actividad">
+          <label for="descripcion">Descripción:</label>
+          <input type="text" id="descripcion" name="descripcion" />
         </div>
-        <hr />
-        <div class="form-adulto">
-          <label for="Tipo">Tipo de actividad: </label>
-          <input type="password" id="Tipo" name="Tipo" />
+        <div class="form-actividad">
+          <label for="TipoActividad">Tipo de actividad:</label>
+          <input type="text" id="TipoActividad" name="TipoActividad" />
         </div>
-        <hr />
-        <img src="img/agregar_icono.png" alt="agregar" />
+        <button type="submit">Enviar</button>
       </form>
-      <button type="submit">
-        <a href="paginaInicioPROFESIONAL.html">Implementar curso</a>
-      </button>
+
       <hr />
       <div class="asignar-curso">
         <h3>Asignar curso a usuarios</h3>
@@ -93,27 +90,9 @@
         ></div>
       </div>
     </section>
-    <script>
-      function asignarCursos() {
-        const usuario = document.getElementById("usuario").value;
-        const cursosSeleccionados = Array.from(
-          document.getElementById("curso").selectedOptions
-        ).map((option) => option.text);
-        const mensajeDiv = document.getElementById("mensajeConfirmacion");
 
-        if (!usuario || cursosSeleccionados.length === 0) {
-          mensajeDiv.style.color = "red";
-          mensajeDiv.innerText =
-            "Por favor, selecciona un usuario y al menos un curso.";
-          return;
-        }
+    <script src="validacionAgregarCurso.js"></script>
 
-        // Simulación de asignación (puedes conectar con backend real más adelante)
-        mensajeDiv.style.color = "green";
-        mensajeDiv.innerText = `Se asignó correctamente ${
-          cursosSeleccionados.length > 1 ? "los cursos" : "el curso"
-        } a ${usuario}.`;
-      }
-    </script>
+    <script src="validacionAgregarCurso2.js"></script>
   </body>
 </html>

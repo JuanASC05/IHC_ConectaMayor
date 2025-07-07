@@ -11,7 +11,7 @@
       <h2>Registro con ayuda de un familiar</h2>
       <p>Por favor, el familiar puede ayudar a completar estos datos.</p>
 
-      <form class="form-ayuda">
+      <form class="form-ayuda" name="frm">
         <div class="form-grupo">
           <label for="nombres">Nombres del adulto mayor:</label>
           <input type="text" id="nombres" />
@@ -40,10 +40,11 @@
           >
         </div>
 
-        <button class="boton-finalizar">
-          <a href="paginaInicioAdulto.html">Finalizar registro</a>
+        <button class="boton-finalizar" type="submit">
+          Finalizar registro
         </button>
       </form>
     </section>
+    <script src="validacionRegistroFamiliar.js"></script>
   </body>
 </html>

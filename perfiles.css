@@ -9,7 +9,11 @@ body {
   justify-content: center;
 }
 
-nav img {
+
+.Perfil-general nav img {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 10px auto;
 }
 
 .Perfil-general {

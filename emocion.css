@@ -83,12 +83,12 @@ button:hover {
 }
 
 .lectura-voz h3 {
-  color: #6a1b9a;
+  color: #4caf50;
   margin-bottom: 15px;
 }
 
 .boton-voz {
-  background-color: #ba68c8;
+  background-color: #74c69d;
   color: white;
   padding: 10px 20px;
   margin-top: 15px;
@@ -100,5 +100,23 @@ button:hover {
 }
 
 .boton-voz:hover {
-  background-color: #9c27b0;
+  background-color: #74c69d;
+}
+
+.inicio {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.inicio a {
+  background-color: #5a90c5;
+  color: white;
+  font-family: "Habibi", serif;
+  font-size: 18px;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
 }

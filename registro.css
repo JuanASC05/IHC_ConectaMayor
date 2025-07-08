@@ -3,8 +3,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #a1d6a0;
   font-family: "Habibi", serif;
+  background-color: #a1d6a0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@ section {
 
 h2 {
   font-family: "Marko One", serif;
-  font-size: 30px;
+  font-size: 32px;
   margin: 1rem 0 0.5rem;
   color: #000000;
 }
@@ -30,20 +30,20 @@ form {
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
   margin-top: 1.5rem;
+  text-align: left;
 }
 
 .form-adulto,
 .form-grupo {
   margin-bottom: 1.2rem;
-  text-align: left;
 }
 
 label {
   display: block;
   margin-bottom: 0.5rem;
   font-size: 18px;
-  color: #000000;
   font-weight: bold;
+  color: #000000;
 }
 
 input[type="text"],
@@ -57,12 +57,33 @@ input[type="email"] {
   border-radius: 6px;
 }
 
+.radios {
+  margin-top: 1rem;
+  font-size: 16px;
+}
+
+.radios label {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.radios a {
+  color: #5a90c5;
+  text-decoration: none;
+}
+
+.radios a:hover {
+  text-decoration: underline;
+}
+
 button[type="submit"] {
   width: 100%;
   padding: 0.8rem;
   font-size: 18px;
   font-family: "Habibi", serif;
-  background-color: #ffff;
+  background-color: #ffffff;
   color: #000000;
   border: none;
   border-radius: 45px;
@@ -73,36 +94,17 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #4178a5;
+  color: white;
 }
 
-.radios {
-  margin-top: 1rem;
-  font-size: 16px;
-  text-align: left;
-}
-
-.radios label {
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-a {
-  color: #5a90c5;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
+/* Botón adicional para ayuda familiar */
 .ayuda-familiar {
   text-align: center;
   margin-top: 20px;
 }
 
 .boton-familiar {
-  background-color: #b2e5d6; /* verde pastel */
+  background-color: #b2e5d6;
   border: none;
   border-radius: 8px;
   padding: 10px 20px;
@@ -114,14 +116,16 @@ a:hover {
 
 .boton-familiar a {
   text-decoration: none;
-  color: #2f4f4f; /* gris verdoso para legibilidad */
+  color: #2f4f4f;
   display: inline-block;
   width: 100%;
 }
 
 .boton-familiar:hover {
-  background-color: #a0d9cc; /* tono más fuerte al pasar el mouse */
+  background-color: #a0d9cc;
 }
+
+/* Social login */
 .social-login-container {
   text-align: center;
   margin-top: 20px;
@@ -154,7 +158,7 @@ a:hover {
 /* Responsive para móviles */
 @media (max-width: 480px) {
   h2 {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   label,
@@ -166,4 +170,14 @@ a:hover {
   form {
     padding: 1.5rem;
   }
+}
+
+.registro-adultoMayor img {
+  width: 200px;
+  height: 200px;
+}
+
+.Registro-profesional img {
+  width: 200px;
+  height: 200px;
 }

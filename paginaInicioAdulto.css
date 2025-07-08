@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Marko+One&family=Habibi&display=swap");
+
+body {
+  font-family: "Habibi", serif;
+  background-color: #a1d6a0;
+  color: #000;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAV */
+.barra-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a1d6a0;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.nav-izquierda {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-izquierda img {
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-links li a {
+  font-family: "Marko One", serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-derecha {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.barra-busqueda {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-family: "Habibi", serif;
+}
+
+.icono {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* BOTONES NAV HEADER */
+.boton-chat-header,
+.boton-apoyo-header,
+.boton-cerrar-sesion {
+  background-color: #7cbf85;
+  color: white;
+  font-family: "Marko One", serif;
+  padding: 8px 14px;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.boton-chat-header {
+  background-color: #a9cbe8;
+}
+
+.boton-apoyo-header {
+  background-color: #7cbf85;
+}
+
+.boton-cerrar-sesion img {
+  height: 28px;
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+/* Indicador de progreso */
+.Indicador-progreso {
+  width: 35%;
+  background-color: #a9cbe8;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  font-family: "Habibi", serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.Indicador-progreso h2 {
+  font-family: "Marko One", serif;
+  font-size: 26px;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.Indicador-progreso .lista {
+  margin-bottom: 1rem;
+  list-style-type: disc;
+  padding-left: 1.2rem;
+}
+
+.Indicador-progreso img {
+  display: block;
+  margin: 0 auto;
+  width: 28px;
+  margin-top: 10px;
+}
+
+/* Cuadrícula 2x2 para cursos */
+.cursos-grid {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Tarjeta de curso */
+.curso {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  font-family: "Habibi", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.curso h2 {
+  font-family: "Marko One", serif;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  color: #000000;
+}
+
+.descripcion-curso {
+  font-size: 16px;
+  margin-bottom: 0.75rem;
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  color: #333;
+}
+
+.curso button {
+  width: 100%;
+  background-color: #5a90c5;
+  color: white;
+  font-family: "Habibi", serif;
+  font-size: 18px;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.curso button:hover {
+  background-color: #3b72a0;
+}
+
+.curso button a {
+  color: white;
+  text-decoration: none;
+}
+
+.boton-iniciar {
+  display: block;
+  text-align: center;
+  width: 100%;
+  background-color: #5a90c5;
+  color: white;
+  font-family: "Habibi", serif;
+  font-size: 18px;
+  padding: 0.8rem;
+  border-radius: 12px;
+  text-decoration: none;
+}
+/* CONTENEDORES VISUALES */
+.chatbot-inicio,
+.registro-emocional,
+.notificacion-curso,
+.resumen-emocional {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 24px auto; /* auto para centrar horizontalmente */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  font-family: "Habibi", serif;
+  max-width: 800px; /* limita el ancho máximo */
+  width: 90%; /* ajustable a pantallas pequeñas */
+}
+
+/* TÍTULOS */
+.chatbot-inicio h2,
+.registro-emocional h2,
+.resumen-emocional h2,
+.notificacion-curso h3 {
+  font-family: "Marko One", serif;
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: #2e7d32;
+  text-align: left;
+}
+
+/* PÁRRAFOS */
+.chatbot-inicio p,
+.registro-emocional p,
+.notificacion-curso p {
+  font-size: 18px;
+  line-height: 26px;
+  color: #333333;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+/* BOTONES UNIFICADOS */
+.boton-chat,
+.boton-emocion,
+.boton-acceder-nuevo-curso,
+.boton-resumen {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-family: "Habibi", serif;
+  background-color: #5a90c5; /* azul medio */
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.boton-acceder-nuevo-curso a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.boton-chat:hover,
+.boton-emocion:hover,
+.boton-acceder-nuevo-curso:hover,
+.boton-resumen:hover {
+  background-color: #4a7eb3; /* azul más oscuro al hacer hover */
+}
+
+/* BOTÓN TESTIMONIOS */
+.boton-testimonios {
+  display: block;
+  background-color: #7cbf85;
+  color: white;
+  font-family: "Marko One", serif;
+  text-align: center;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  margin: 25px auto;
+  width: 80%;
+  max-width: 400px;
+}
+
+/* ÍCONO CONTACTO */
+.icono-contacto img {
+  width: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Carrusel */
+.carrusel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 10px; /* reducido */
+  margin-bottom: 10px; /* también reducido */
+}
+
+.carrusel-imagenes {
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin: 0 10px; /* para acercar las flechas */
+}
+
+.imagen-carrusel {
+  width: 100%;
+  display: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-carrusel.visible {
+  display: block;
+}
+
+.flecha {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #5a90c5;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.flecha:hover {
+  transform: scale(1.2);
+}
+
+/* Footer App Stores */
+.seccion-descarga {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 25px 15px;
+  margin-top: 20px;
+}
+
+.seccion-descarga p {
+  font-family: "Habibi", serif;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.logos-descarga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-store {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.logo-store:hover {
+  transform: scale(1.05);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .barra-horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .nav-derecha {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .barra-busqueda {
+    width: 100%;
+  }
+
+  .curso button {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  .Indicador-progreso h2,
+  .curso h2 {
+    font-size: 20px;
+  }
+}
+.Indicador-progreso,
+.registro-emocional {
+  padding: 1rem;
+}

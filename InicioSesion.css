@@ -77,6 +77,23 @@ input[type="password"] {
 .Opciones-inicioSesion {
   margin-top: 1.5rem;
 }
+button[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #5a90c5;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Habibi", serif;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3b72a0;
+  transform: scale(1.02);
+}
 
 .Opciones-inicioSesion p {
   font-weight: bold;
@@ -120,4 +137,13 @@ input[type="password"] {
 
 .social-icons a img:hover {
   transform: scale(1.1);
+}
+
+.InicioSesion-Profesional img {
+  width: 200px;
+  height: 200px;
+}
+.registro-adultoMayor img {
+  width: 200px;
+  height: 200px;
 }

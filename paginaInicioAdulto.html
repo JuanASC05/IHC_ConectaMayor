@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página de inicio</title>
-    <link rel="stylesheet" href="PaginaDeInicio.css" />
+    <link rel="stylesheet" href="paginaInicioAdulto.css" />
   </head>
   <body>
     <nav class="barra-horizontal">
@@ -47,116 +47,133 @@
     </nav>
 
     <section class="Pag-inicio">
-      <div class="Indicador-progreso">
-        <h2>Indicador de progreso</h2>
-        <p>Curso: Bienestar emocional</p>
-        <div class="lista">
-          <li>Actividades: 2/2 sesiones completadas</li>
-          <li>Progreso: 3/4 lecciones</li>
-        </div>
-        <hr />
-        <p>Curso: Relaciones Saludables</p>
-        <div class="lista">
-          <li>Actividades: 2/7 sesiones completadas</li>
-          <li>Progreso: 5/10 lecciones</li>
-        </div>
-        <hr />
-        <p>Curso: Autoestima y Autovaloración</p>
-        <div class="lista">
-          <li>Actividades: 8/9 sesiones completadas</li>
-          <li>Progreso: 6/7 lecciones</li>
-        </div>
-        <hr />
-        <p>Curso: Memoria Activa</p>
-        <div class="lista">
-          <li>Actividades: 1/5 sesiones completadas</li>
-
-          <li>Progreso: 2/6 lecciones</li>
-        </div>
-        <img src="" alt="" />
-      </div>
-
-      <div class="Administrar-cursos">
-        <div class="curso">
-          <h2>Bienestar emocional</h2>
-          <div class="descripcion-curso">
-            <li>Profesor: Augusto Ribeyra</li>
-            <li>Acompañado por I.A</li>
-            <li>4 sesiones - actividades</li>
+      <div class="contenedor-principal">
+        <!-- Indicador de progreso a la izquierda -->
+        <div class="Indicador-progreso">
+          <h2>Indicador de progreso</h2>
+          <p>Curso: Desarrollo de habilidades</p>
+          <div class="lista">
+            <li>Nombre: Augusto Romero</li>
+            <li>Actividades: 2/4 sesiones completadas</li>
+            <li>Progreso: 3 lecciones</li>
           </div>
-          <a href="CURSO.html" class="boton-iniciar">INICIAR</a>
-        </div>
-
-        <div class="curso">
-          <h2>Relaciones Saludables</h2>
-          <div class="descripcion-curso">
-            <li>Profesor: Martin Zegarra</li>
-            <li>Acompañado por I.A</li>
-            <li>10 sesiones - actividades</li>
+          <hr />
+          <div class="lista">
+            <li>Nombre: Sair Sanchez</li>
+            <li>Actividades: 2/4 sesiones completadas</li>
+            <li>Progreso: 5 lecciones</li>
           </div>
-          <a href="CURSO.html" class="boton-iniciar">INICIAR</a>
-        </div>
-
-        <div class="curso">
-          <h2>Autoestima y Autovaloración</h2>
-          <div class="descripcion-curso">
-            <li>Profesor: Pedro Larmo</li>
-            <li>Acompañado por I.A</li>
-            <li>7 sesiones - actividades</li>
+          <hr />
+          <div class="lista">
+            <li>Nombre: Juan Vilcaromero</li>
+            <li>Actividades: 8/4 sesiones completadas</li>
+            <li>Progreso: 6 lecciones</li>
           </div>
-          <a href="CURSO.html" class="boton-iniciar">INICIAR</a>
-        </div>
-
-        <div class="curso">
-          <h2>Memoria Activa</h2>
-          <div class="descripcion-curso">
-            <li>Profesor: Mathias Vilca</li>
-            <li>Acompañado por I.A</li>
-            <li>6 sesiones - actividades</li>
+          <hr />
+          <div class="lista">
+            <li>Nombre: Juan Federico</li>
+            <li>Actividades: 1/4 sesiones completadas</li>
+            <li>Progreso: 2 lecciones</li>
           </div>
-          <a href="CURSO.html" class="boton-iniciar">INICIAR</a>
+          <img src="img/flecha_abajo.png" alt="verMas" />
         </div>
-      </div>
-      <div class="chatbot-inicio">
-        <h2>¿Necesitas hablar?</h2>
-        <p>
-          Haz clic abajo para iniciar una conversación con nuestro asistente
-          virtual
-        </p>
-        <button onclick="location.href='chatAsistente.html'" class="boton-chat">
-          Iniciar conversación con asistente
-        </button>
-      </div>
-      <div class="registro-emocional">
-        <h2>¿Cómo te sientes hoy?</h2>
-        <p>
-          Registra tu estado emocional diario para que podamos ayudarte mejor
-        </p>
-        <button onclick="location.href='emocion.html'" class="boton-emocion">
-          Registrar estado emocional
-        </button>
-      </div>
-      <div class="notificacion-curso">
-        <h3>¡Nuevo curso disponible!</h3>
-        <p>
-          Hemos agregado el curso
-          <strong>"Mindfulness para el día a día"</strong>.
-        </p>
-        <button class="boton-acceder-nuevo-curso">
-          <a href="CURSO.html">Acceder al curso</a>
-        </button>
-      </div>
-      <div class="resumen-emocional">
-        <h2>¿Quieres ver cómo te has sentido esta semana?</h2>
-        <button
-          onclick="location.href='resumenEmocional.html'"
-          class="boton-resumen"
-        >
-          Ver resumen emocional semanal
-        </button>
+    
+        <!-- Cursos a la derecha en 2x2 -->
+        <div class="cursos-grid">
+          <div class="curso">
+            <h2>Desarrollo de habilidades</h2>
+            <div class="descripcion-curso">
+              <li>14 sesiones - actividades</li>
+              <li>Acompañado por I.A</li>
+              <li>Contenido basado en psicología</li>
+            </div>
+            <button type="button">ADMINISTRAR</button>
+          </div>
+    
+          <div class="curso">
+            <h2>Comunicación y Vínculos Saludables</h2>
+            <div class="descripcion-curso">
+              <li>14 sesiones - actividades</li>
+              <li>Acompañado por I.A</li>
+              <li>Contenido basado en psicología</li>
+            </div>
+            <button type="button"><a href="#">ADMINISTRAR</a></button>
+          </div>
+    
+          <div class="curso">
+            <h2>Fortalecimiento del Bienestar Emocional</h2>
+            <div class="descripcion-curso">
+              <li>14 sesiones - actividades</li>
+              <li>Acompañado por I.A</li>
+              <li>Contenido basado en psicología</li>
+            </div>
+            <button type="button"><a href="#">ADMINISTRAR</a></button>
+          </div>
+    
+          <div class="curso">
+            <h2>Autocuidado y Estilo de Vida Saludable</h2>
+            <div class="descripcion-curso">
+              <li>14 sesiones - actividades</li>
+              <li>Acompañado por I.A</li>
+              <li>Contenido basado en psicología</li>
+            </div>
+            <button type="button"><a href="#">ADMINISTRAR</a></button>
+          </div>
+        </div>
       </div>
     </section>
-  </section>
+    
+    
+    <div class="chatbot-inicio">
+      <h2>¿Necesitas hablar?</h2>
+      <p>
+        Haz clic abajo para iniciar una conversación con nuestro asistente
+        virtual
+      </p>
+      <button onclick="location.href='chatAsistente.html'" class="boton-chat">
+        Iniciar conversación con asistente
+      </button>
+    </div>
+    <div class="registro-emocional">
+      <h2>¿Cómo te sientes hoy?</h2>
+      <p>
+        Registra tu estado emocional diario para que podamos ayudarte mejor
+      </p>
+      <button onclick="location.href='emocion.html'" class="boton-emocion">
+        Registrar estado emocional
+      </button>
+    </div>
+    <div class="notificacion-curso">
+      <h3>¡Nuevo curso disponible!</h3>
+      <p>
+        Hemos agregado el curso
+        <strong>"Mindfulness para el día a día"</strong>.
+      </p>
+      <button class="boton-acceder-nuevo-curso">
+        <a href="CURSO.html">Acceder al curso</a>
+      </button>
+    </div>
+    <div class="resumen-emocional">
+      <h2>¿Quieres ver cómo te has sentido esta semana?</h2>
+      <button
+        onclick="location.href='resumenEmocional.html'"
+        class="boton-resumen"
+      >
+        Ver resumen emocional semanal
+      </button>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <a href="Testimonios.html" class="boton-testimonios"
       >Ver testimonios de otros usuarios</a
     >

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,17 +20,19 @@
           </li>
           <li>
             <a href="FAQprofesionales.html">
-              <img
-                src="img/icono-faq.png"
+              <imgsrc
+                ="img/icono-faq.png"
                 alt="FAQ"
                 style="width: 20px; vertical-align: middle; margin-right: 6px"
               />
               Preguntas Frecuentes
             </a>
           </li>
-          <a href="EstadisticasImpacto.html" class="boton-estadisticas"
-            >📊 Estadísticas</a
-          >
+          <li>
+            <a href="EstadisticasImpacto.html" class="boton-estadisticas"
+              >📊 Estadísticas</a
+            >
+          </li>
         </ul>
       </div>
 
@@ -40,12 +42,12 @@
           placeholder="Buscar paciente o curso..."
           class="barra-busqueda"
         />
-        <a href="PerfilPROFESIONAL.html"
-          ><img src="img/Perfil_icono.png" alt="perfil" class="icono"
-        /></a>
-        <a href="#"
-          ><img src="img/menuHamburguesa_icono.png" alt="menu" class="icono"
-        /></a>
+        <a href="PerfilPROFESIONAL.html">
+          <img src="img/Perfil_icono.png" alt="perfil" class="icono" />
+        </a>
+        <a href="#">
+          <img src="img/menuHamburguesa_icono.png" alt="menu" class="icono" />
+        </a>
       </div>
       <a href="MensajesMotivacionales.html" class="boton-mensajes-auto"
         >📨 Mensajes</a
@@ -53,17 +55,15 @@
       <a href="index.html" class="boton-cerrar-sesion" title="Cerrar sesión">
         <img src="img/icono_logout.png" alt="Cerrar sesión" />
       </a>
-
       <a href="chatProfesional.html" class="boton-chat-header">💬 Chat</a>
       <a href="#inactividad" class="boton-inactividad-header">📌 Inactividad</a>
-
-      <!-- en paginaInicioProfesional.html -->
     </nav>
 
     <section class="Pag-inicio">
       <div class="Indicador-progreso">
         <h2>Indicador de progreso</h2>
         <p>Curso: Desarrollo de habilidades</p>
+
         <div class="lista">
           <li>Nombre: Augusto Romero</li>
           <li>Actividades: 2/4 sesiones completadas</li>
@@ -87,7 +87,8 @@
           <li>Actividades: 1/4 sesiones completadas</li>
           <li>Progreso: 2 lecciones</li>
         </div>
-        <img src="img/flecha_abajo.png" alt="verMas" />
+
+        <img src="img/flecha_abajo.png" alt="ver más" />
       </div>
 
       <div class="Administrar-cursos">
@@ -98,7 +99,9 @@
             <li>Acompañado por I.A</li>
             <li>Contenido basado en psicología</li>
           </div>
-          <button type="button">ADMINISTRAR</button>
+          <a href="AdministracionCurso.html"
+            ><button type="button">ADMINISTRAR</button></a
+          >
         </div>
 
         <div class="curso">
@@ -108,9 +111,9 @@
             <li>Acompañado por I.A</li>
             <li>Contenido basado en psicología</li>
           </div>
-          <button type="button">
-            <a href="AdministracionCurso.html">ADMINISTRAR</a>
-          </button>
+          <a href="AdministracionCurso.html"
+            ><button type="button">ADMINISTRAR</button></a
+          >
         </div>
 
         <div class="curso">
@@ -120,9 +123,9 @@
             <li>Acompañado por I.A</li>
             <li>Contenido basado en psicología</li>
           </div>
-          <button type="button">
-            <a href="AdministracionCurso.html">ADMINISTRAR</a>
-          </button>
+          <a href="AdministracionCurso.html"
+            ><button type="button">ADMINISTRAR</button></a
+          >
         </div>
 
         <div class="curso">
@@ -132,12 +135,13 @@
             <li>Acompañado por I.A</li>
             <li>Contenido basado en psicología</li>
           </div>
-          <button type="button">
-            <a href="AdministracionCurso.html">ADMINISTRAR</a>
-          </button>
+          <a href="AdministracionCurso.html"
+            ><button type="button">ADMINISTRAR</button></a
+          >
         </div>
       </div>
     </section>
+
     <section class="alertas-criticas">
       <h2>🔔 Alertas por emociones críticas</h2>
 
@@ -161,24 +165,26 @@
         <p><strong>Fecha:</strong> 08/07/2025 - 11:30 a.m.</p>
         <button class="boton-alerta">Marcar como atendida</button>
       </div>
-      <section class="alertas-inactividad" id="inactividad">
-        <h2>📌 Alertas por inactividad del paciente</h2>
-
-        <div class="alerta">
-          <p><strong>Paciente:</strong> Juana López</p>
-          <p><strong>Días inactiva:</strong> 4 días</p>
-          <p><strong>Último acceso:</strong> 07/07/2025 - 10:30 a.m.</p>
-          <button class="boton-alerta">Registrar seguimiento</button>
-        </div>
-
-        <div class="alerta">
-          <p><strong>Paciente:</strong> Carlos Ruiz</p>
-          <p><strong>Días inactivo:</strong> 5 días</p>
-          <p><strong>Último acceso:</strong> 06/07/2025 - 09:10 a.m.</p>
-          <button class="boton-alerta">Registrar seguimiento</button>
-        </div>
-      </section>
     </section>
+
+    <section class="alertas-inactividad" id="inactividad">
+      <h2>📌 Alertas por inactividad del paciente</h2>
+
+      <div class="alerta">
+        <p><strong>Paciente:</strong> Juana López</p>
+        <p><strong>Días inactiva:</strong> 4 días</p>
+        <p><strong>Último acceso:</strong> 07/07/2025 - 10:30 a.m.</p>
+        <button class="boton-alerta">Registrar seguimiento</button>
+      </div>
+
+      <div class="alerta">
+        <p><strong>Paciente:</strong> Carlos Ruiz</p>
+        <p><strong>Días inactivo:</strong> 5 días</p>
+        <p><strong>Último acceso:</strong> 06/07/2025 - 09:10 a.m.</p>
+        <button class="boton-alerta">Registrar seguimiento</button>
+      </div>
+    </section>
+
     <section class="seccion-descarga">
       <p>Disponible en móviles y tablets</p>
       <div class="logos-descarga">

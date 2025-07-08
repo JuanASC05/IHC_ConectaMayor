@@ -5,50 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resumen emocional semanal</title>
     <link rel="stylesheet" href="resumenEmocional.css" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <section class="resumen-contenedor">
       <h2>Resumen emocional de los últimos 7 días</h2>
       <canvas id="graficoEmociones"></canvas>
-      <br />
+
+      <img
+        src="img/graficoEmocional.jpeg"
+        alt="Gráfico de barras de bienestar semanal"
+        width="100%"
+        style="
+          max-width: 600px;
+          display: block;
+          margin: auto;
+          border-radius: 12px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        "
+      />
       <button onclick="location.href='paginaInicioAdulto.html'" class="volver">
         Volver al inicio
       </button>
     </section>
-
-    <script>
-      const ctx = document.getElementById("graficoEmociones").getContext("2d");
-      const grafico = new Chart(ctx, {
-        type: "bar",
-        data: {
-          labels: ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"],
-          datasets: [
-            {
-              label: "Nivel de Bienestar (1-5)",
-              data: [3, 2, 4, 3, 5, 4, 3],
-              backgroundColor: "#aed9c7",
-            },
-          ],
-        },
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true,
-              max: 5,
-            },
-          },
-          plugins: {
-            legend: {
-              labels: {
-                font: {
-                  size: 16,
-                },
-              },
-            },
-          },
-        },
-      });
-    </script>
   </body>
 </html>

@@ -1,8 +1,8 @@
-/* Fondo pastel general */
+/* Fondo general */
 body {
   margin: 0;
   padding: 0;
-  background-color: #a1d6a0;
+  background-color: #a1d6a0; /* Verde pastel */
   font-family: "Segoe UI", sans-serif;
   display: flex;
   justify-content: center;
@@ -10,53 +10,70 @@ body {
   height: 100vh;
 }
 
-/* Contenedor del chat */
+/* Contenedor principal del chat */
 .chat-container {
-  background-color: #a9cbe8;
+  background-color: #ffffff;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 700px;
   max-width: 90%;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 0;
+  overflow: hidden;
 }
 
 /* Encabezado del chat */
 .chat-header {
-  background-color: #c3e6cb; /* verde claro */
-  color: #1b4332;
-  padding: 10px;
+  background-color: #4f9d69;
+  color: white;
+  padding: 16px;
   font-size: 20px;
   font-weight: bold;
-  border-radius: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Área de mensajes */
-.chat-body {
-  background-color: #f4fdf7;
-  flex-grow: 1;
-  margin-top: 15px;
-  padding: 10px;
+/* Botón de Finalizar */
+.finalizar-btn {
+  background-color: #e76f51;
+  color: white;
+  border: none;
   border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.finalizar-btn:hover {
+  background-color: #d4573b;
+}
+
+/* Área de mensajes */
+.chat-box {
+  background-color: #f1f9f6;
+  flex-grow: 1;
+  padding: 30px;
   overflow-y: auto;
-  max-height: 300px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* Mensajes */
 .message {
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
   max-width: 80%;
   word-wrap: break-word;
+  font-size: 15px;
 }
 
 .message.bot {
-  background-color: #d1f7e2;
+  background-color: #cdeccd;
   align-self: flex-start;
 }
 
@@ -66,18 +83,21 @@ body {
   text-align: right;
 }
 
-/* Pie del chat */
+/* Pie del chat (input y botón) */
 .chat-footer {
   display: flex;
-  margin-top: 15px;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  gap: 8px;
 }
 
 .chat-footer input {
   flex: 1;
-  padding: 8px;
+  padding: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  margin-right: 8px;
+  font-size: 15px;
+  outline: none;
 }
 
 .chat-footer button {
@@ -85,16 +105,12 @@ body {
   color: white;
   border: none;
   border-radius: 8px;
-  padding: 8px 12px;
+  padding: 10px 16px;
+  font-size: 14px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.finalizar-btn {
-  background-color: #e07a5f;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 5px 10px;
-  cursor: pointer;
-  font-size: 14px;
+.chat-footer button:hover {
+  background-color: #3e8e41;
 }

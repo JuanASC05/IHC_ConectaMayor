@@ -8,18 +8,21 @@
   </head>
   <body>
     <div class="chat-container">
-      <header>
+      <header class="chat-header">
         <h2>Asistente SiempreContigo</h2>
-        <button onclick="location.href='paginaInicioAdulto.html'">
+        <button
+          class="finalizar-btn"
+          onclick="location.href='paginaInicioAdulto.html'"
+        >
           Finalizar
         </button>
       </header>
 
       <div class="chat-box" id="chat-box">
-        <div class="mensaje asistente">Hola, ¿Cómo te sientes hoy?</div>
+        <div class="message bot">Hola, ¿Cómo te sientes hoy?</div>
       </div>
 
-      <div class="chat-input">
+      <div class="chat-footer">
         <input
           type="text"
           id="userInput"

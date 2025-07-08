@@ -11,7 +11,6 @@
       <div class="nav-izquierda">
         <img src="img/LOGO_SiempreContigo.png" alt="logo" />
         <ul class="nav-links">
-          <li><a href="SobreNosotros.html">Sobre nosotros</a></li>
           <li><a href="InscripcionCurso.html">Inscripcion a Curso</a></li>
           <li><a href="BeneficiosAdulto.html">Beneficios</a></li>
         </ul>
@@ -27,28 +26,25 @@
         <a href="perfilADULTO.html"
           ><img src="img/Perfil_icono.png" alt="perfil" class="icono"
         /></a>
-    
-        <a href="configNotificaciones.html">
-          <img
-            src="img/icono-configuracion.png"
-            alt="configuración"
-            class="icono"
-          />
-        </a>
-        <a href="index.html" class="boton-cerrar-sesion" title="Cerrar sesión">
-          <img src="img/icono_logout.png" alt="Cerrar sesión">
-        </a>
-            
-      </div>
-      <a href="chatPaciente.html" class="boton-chat-header">💬 Chat</a>
-      <a href="RedApoyo.html" class="boton-apoyo-header">🤝 Red de Apoyo</a>
+        <div class="contenedor-menu-hamburguesa">
+          <button class="menu-toggle" aria-label="Abrir menú" tabindex="0">
+            ☰
+          </button>
+          <ul class="menu-hamburguesa">
+            <li><a href="chatPaciente.html">💬 Chat</a></li>
+            <li><a href="RedApoyo.html">🤝 Red de Apoyo</a></li>
+            <li><a href="configNotificaciones.html">⚙️ Configuración</a></li>
+            <li><a href="index.html" class="cerrar-sesion">🔓 Cerrar sesión</a></li>
+          </ul>
+        </div>
+        
 
       <!-- en paginaInicioAdulto.html -->
     </nav>
 
     <section class="Pag-inicio">
       <div class="contenedor-principal">
-        <!-- Indicador de progreso a la izquierda -->
+    
         <div class="Indicador-progreso">
           <h2>Indicador de progreso</h2>
           <p>Curso: Desarrollo de habilidades</p>
@@ -75,10 +71,10 @@
             <li>Actividades: 1/4 sesiones completadas</li>
             <li>Progreso: 2 lecciones</li>
           </div>
-          <img src="img/flecha_abajo.png" alt="verMas" />
+        
         </div>
     
-        <!-- Cursos a la derecha en 2x2 -->
+  
         <div class="cursos-grid">
           <div class="curso">
             <h2>Desarrollo de habilidades</h2>

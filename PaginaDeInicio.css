@@ -104,29 +104,80 @@ body {
   background-color: #7c3ea8;
 }
 
-.boton-cerrar-sesion {
-  position: fixed;
-  bottom: 90px;
-  right: 20px;
-  background-color: #d9534f;
-  border-radius: 50%;
-  padding: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  z-index: 999;
-  transition: transform 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+
+
+.contenedor-menu-hamburguesa {
+  position: relative;
+  display: inline-block;
 }
 
-.boton-cerrar-sesion:hover {
-  transform: scale(1.1);
+.menu-toggle {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
-.boton-cerrar-sesion img {
-  width: 28px;
-  height: 28px;
+.menu-hamburguesa {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #d8f3dc;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  list-style: none;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
 }
+
+.contenedor-menu-hamburguesa:focus-within .menu-hamburguesa {
+  display: block;
+}
+
+
+/* Estilo opcional para los botones del menú */
+.menu-hamburguesa li {
+  margin: 0.5rem 0;
+}
+
+.menu-hamburguesa a {
+  display: block;
+  text-decoration: none;
+  font-family: "Habibi", serif;
+  font-size: 18px;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #a1d6a0;
+  transition: background-color 0.3s;
+}
+
+.menu-hamburguesa a:hover {
+  background-color: #7cbf85;
+}
+.menu-hamburguesa a.cerrar-sesion {
+  background-color: #fca5a5; 
+  font-family: "Habibi", serif;
+  color: black;
+  font-weight: bold;
+}
+
+.menu-hamburguesa a.cerrar-sesion:hover {
+  background-color: #ef4444; 
+  color: white;
+}
+.menu-hamburguesa a.alerta-emocional {
+  background-color: #f87171; 
+  font-family: "Habibi", serif;
+  color: black;
+  font-weight: bold;
+  animation: parpadeo 1.5s infinite;
+}
+
 
 /* ====== RESPONSIVE NAV ====== */
 @media (max-width: 768px) {
@@ -142,6 +193,44 @@ body {
 
   .barra-busqueda {
     width: 100%;
+  }
+
+  /* --- Estilos para el menú hamburguesa responsivo --- */
+  .contenedor-menu-hamburguesa {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .menu-toggle {
+    margin-left: auto;
+    font-size: 2rem;
+  }
+
+  .menu-hamburguesa {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background-color: #d8f3dc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-hamburguesa a {
+    font-size: 16px;
+    padding: 0.6rem;
+  }
+
+  .menu-hamburguesa a.cerrar-sesion {
+    background-color: #fca5a5;
+  }
+
+  .menu-hamburguesa a.cerrar-sesion:hover {
+    background-color: #ef4444;
+    color: white;
   }
 }
 

@@ -11,23 +11,13 @@
       <div class="nav-izquierda">
         <img src="img/LOGO_SiempreContigo.png" alt="logo" />
         <ul class="nav-links">
-          <li><a href="SobreNosotros.html">Sobre nosotros</a></li>
           <li><a href="AgregarCurso.html">Agregar curso</a></li>
           <li>
             <a href="beneficiosProfesional.html"
               >Beneficios para profesionales</a
             >
           </li>
-          <li>
-            <a href="FAQprofesionales.html">
-              <imgsrc
-                ="img/icono-faq.png"
-                alt="FAQ"
-                style="width: 20px; vertical-align: middle; margin-right: 6px"
-              />
-              Preguntas Frecuentes
-            </a>
-          </li>
+          <li><a href="FAQprofesionales.html">Preguntas Frecuentes</a></li>
           <li>
             <a href="EstadisticasImpacto.html" class="boton-estadisticas"
               >📊 Estadísticas</a
@@ -45,15 +35,41 @@
         <a href="PerfilPROFESIONAL.html">
           <img src="img/Perfil_icono.png" alt="perfil" class="icono" />
         </a>
+
+        <div class="contenedor-menu-hamburguesa">
+          <button class="menu-toggle" aria-label="Abrir menú" tabindex="0">
+            ☰
+          </button>
+
+          <ul class="menu-hamburguesa">
+            <li>
+              <a href="MensajesMotivacionales.html" class="boton-mensajes-auto"
+                >📨 Mensajes</a
+              >
+            </li>
+            <li>
+              <a href="chatProfesional.html" class="boton-chat-header"
+                >💬 Chat</a
+              >
+            </li>
+          
+            <li>
+              <a href="#inactividad" class="boton-inactividad-header"
+                >📌 Inactividad</a
+              >
+            </li>
+            <li>
+              <a href="#alertas" class="alerta-emocional"
+                >🚨 Emociones críticas</a
+              >
+            </li>
+            <li>
+              <a href="index.html" class="cerrar-sesion">🔓 Cerrar sesión</a>
+            </li>
+            >
+          </ul>
+        </div>
       </div>
-      <a href="MensajesMotivacionales.html" class="boton-mensajes-auto"
-        >📨 Mensajes</a
-      >
-      <a href="index.html" class="boton-cerrar-sesion" title="Cerrar sesión">
-        <img src="img/icono_logout.png" alt="Cerrar sesión" />
-      </a>
-      <a href="chatProfesional.html" class="boton-chat-header">💬 Chat</a>
-      <a href="#inactividad" class="boton-inactividad-header">📌 Inactividad</a>
     </nav>
 
     <section class="Pag-inicio">
@@ -85,7 +101,7 @@
           <li>Progreso: 2 lecciones</li>
         </div>
 
-        <img src="img/flecha_abajo.png" alt="ver más" />
+        <!--<img src="img/flecha_abajo.png" alt="verMas" /> -->
       </div>
 
       <div class="Administrar-cursos">
@@ -139,7 +155,7 @@
       </div>
     </section>
 
-    <section class="alertas-criticas">
+    <section class="alertas-criticas" id="alertas">
       <h2>🔔 Alertas por emociones críticas</h2>
 
       <div class="alerta">

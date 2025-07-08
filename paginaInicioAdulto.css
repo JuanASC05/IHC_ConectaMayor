@@ -64,30 +64,70 @@ body {
   cursor: pointer;
 }
 
-/* BOTONES NAV HEADER */
-.boton-chat-header,
-.boton-apoyo-header,
-.boton-cerrar-sesion {
-  background-color: #7cbf85;
-  color: white;
-  font-family: "Marko One", serif;
-  padding: 8px 14px;
-  border-radius: 10px;
-  margin-left: 10px;
+.contenedor-menu-hamburguesa {
+  position: relative;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.menu-toggle {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #1b1b1b;
+}
+
+.menu-hamburguesa {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #d8f3dc;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  list-style: none;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+}
+
+.contenedor-menu-hamburguesa:focus-within .menu-hamburguesa {
+  display: block;
+}
+
+.menu-hamburguesa li {
+  margin: 0.5rem 0;
+}
+
+.menu-hamburguesa a {
+  display: block;
   text-decoration: none;
-  font-size: 16px;
+  font-family: "Habibi", serif;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #a1d6a0;
+  transition: background-color 0.3s;
 }
 
-.boton-chat-header {
-  background-color: #a9cbe8;
-}
-
-.boton-apoyo-header {
+.menu-hamburguesa a:hover {
   background-color: #7cbf85;
 }
 
-.boton-cerrar-sesion img {
-  height: 28px;
+.menu-hamburguesa a.cerrar-sesion {
+  font-family: "Habibi", serif;
+  color: black;
+  font-weight: bold;
+  background-color: #fca5a5;
+}
+
+.menu-hamburguesa a.cerrar-sesion:hover {
+  background-color: #ef4444;
+  color: white;
 }
 
 /* Contenedor principal */
@@ -399,6 +439,43 @@ body {
   .curso h2 {
     font-size: 20px;
   }
+  .contenedor-menu-hamburguesa {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .menu-toggle {
+    margin-left: auto;
+    font-size: 2rem;
+  }
+
+  .menu-hamburguesa {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background-color: #d8f3dc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-hamburguesa a {
+    font-size: 16px;
+    padding: 0.6rem;
+  }
+
+  .menu-hamburguesa a.cerrar-sesion {
+    background-color: #fca5a5;
+  }
+
+  .menu-hamburguesa a.cerrar-sesion:hover {
+    background-color: #ef4444;
+    color: white;
+  }
+
 }
 .Indicador-progreso,
 .registro-emocional {

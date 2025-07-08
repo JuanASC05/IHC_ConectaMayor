@@ -17,11 +17,19 @@ body {
   padding: 2rem;
 }
 
+.Inscripcion-cursos img {
+  height: 90px;
+}
+
 .Inscripcion-cursos > p {
   text-align: center;
   font-size: 20px;
   margin-bottom: 2rem;
   font-family: "Marko One", serif;
+}
+
+.text-princ {
+  align-items: center;
 }
 
 .curso {
@@ -52,7 +60,7 @@ body {
   text-decoration: underline;
 }
 
-.curso button {
+.Inscripcion a {
   margin-top: 0.75rem;
   background-color: #5a90c5;
   color: white;
@@ -62,6 +70,10 @@ body {
   font-size: 16px;
   cursor: pointer;
   font-family: "Habibi", serif;
+  text-decoration: none;
+}
+
+.curso button {
 }
 
 .curso button:hover {

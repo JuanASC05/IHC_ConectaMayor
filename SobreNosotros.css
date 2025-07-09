@@ -41,21 +41,20 @@ body {
   margin-right: auto;
 }
 
-button,
-buttom {
+.contenido a{
   font-family: "Habibi", serif;
   background-color: #5a90c5;
-  color: #000;
+  color: #fff;
   border: none;
   font-size: 18px;
   padding: 0.9rem 2rem;
   border-radius: 45px;
   cursor: pointer;
   margin-top: 1rem;
+  text-decoration:none;
 }
 
-button:hover,
-buttom:hover {
+.contenido a:hover {
   background-color: #4178a5;
 }
 

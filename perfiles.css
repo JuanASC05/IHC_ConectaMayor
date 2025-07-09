@@ -133,6 +133,21 @@ button[type="submit"]:hover {
   border-radius: 10px;
   max-width: 400px;
 }
+.boton-retorno {
+  display: inline-block;
+  background-color: #a1d6a0;
+  color: #000;
+  font-family: "Habibi", serif;
+  font-size: 18px;
+  padding: 0.7rem 1.2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.boton-retorno:hover {
+  background-color: #7cbf85;
+}
 
 @media (max-width: 480px) {
   h3 {

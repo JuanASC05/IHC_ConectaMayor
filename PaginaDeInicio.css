@@ -104,9 +104,6 @@ body {
   background-color: #7c3ea8;
 }
 
-
-
-
 .contenedor-menu-hamburguesa {
   position: relative;
   display: inline-block;
@@ -138,7 +135,6 @@ body {
   display: block;
 }
 
-
 /* Estilo opcional para los botones del menú */
 .menu-hamburguesa li {
   margin: 0.5rem 0;
@@ -160,24 +156,23 @@ body {
   background-color: #7cbf85;
 }
 .menu-hamburguesa a.cerrar-sesion {
-  background-color: #fca5a5; 
+  background-color: #fca5a5;
   font-family: "Habibi", serif;
   color: black;
   font-weight: bold;
 }
 
 .menu-hamburguesa a.cerrar-sesion:hover {
-  background-color: #ef4444; 
+  background-color: #ef4444;
   color: white;
 }
 .menu-hamburguesa a.alerta-emocional {
-  background-color: #f87171; 
+  background-color: #f87171;
   font-family: "Habibi", serif;
   color: black;
   font-weight: bold;
   animation: parpadeo 1.5s infinite;
 }
-
 
 /* ====== RESPONSIVE NAV ====== */
 @media (max-width: 768px) {
@@ -620,12 +615,11 @@ body {
   transform: scale(1.1);
 }
 .seccion-descarga {
-  background-color: #f0f8f5;
-  text-align: center;
-  padding: 1rem;
-  font-family: "Segoe UI", sans-serif;
-  font-size: 1rem;
-  color: #25664d;
+  background-color: #edf7f3;
+  padding: 0.4rem 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logos-descarga {

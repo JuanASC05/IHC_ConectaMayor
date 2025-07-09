@@ -381,10 +381,11 @@ body {
 
 /* Footer App Stores */
 .seccion-descarga {
-  text-align: center;
-  background-color: #f0f0f0;
-  padding: 25px 15px;
-  margin-top: 20px;
+  background-color: #edf7f3;
+  padding: 0.4rem 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .seccion-descarga p {

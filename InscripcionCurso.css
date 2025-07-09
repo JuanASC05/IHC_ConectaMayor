@@ -160,3 +160,24 @@ body {
 .boton-retorno:hover {
   background-color: #a1d6a0; /* Fondo principal verde claro */
 }
+
+.Volver-inicio {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Volver-inicio a {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  border-radius: 45px;
+  cursor: pointer;
+  padding: 0.8rem 1.5rem; /* más espacio horizontal */
+  background-color: #5a90c5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Volver-inicio a:hover{
+  background-color: #4178a5;
+}

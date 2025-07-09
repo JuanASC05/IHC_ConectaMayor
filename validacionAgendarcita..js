@@ -26,7 +26,7 @@
     const confirmar = confirm("¿Desea confirmar la cita?");
     if (!confirmar) return;
 
-    alert("✅ ¡Cita agendada exitosamente!");
+    alert(" ¡Cita agendada exitosamente!");
     form.reset();
     formContainer.style.display = "none";
     btn.style.display = "inline-block"; 

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso</title>
+    <link rel="stylesheet" href="curso.css" />
+  </head>
+  <body>
+    <section class="Contenido">
+        <div class="Encabezado">
+            <h2>Comunicación y Vínculos Saludables</h2>
+            <p>
+            Este curso te brindará herramientas para mejorar tu forma de comunicarte, expresar tus emociones con claridad y 
+            fortalecer tus relaciones personales. A través de dinámicas sencillas y reflexivas, aprenderás a escuchar 
+            activamente, resolver conflictos de manera respetuosa y cultivar vínculos más empáticos y significativos 
+            en tu entorno diario.
+            </p>
+            
+                <div class="Actividades">
+                    <p>ejercicio de meditación   (15min)</p>
+                    <br/>
+                    <p>ejercicio de respiración  (10 min)</p>
+                </div>
+        </div>
+        <div class="Progreso">
+            <img src="img/barra_20.png" alt="barra"/>
+            <p><a href="PoliticasyTerminos/Bienestar Emocional.pdf" target="_blank">Ver recursos</a></p>
+            <p><a href="">Mensaje del psicologo</a></p>
+        </div>
+        <div class="Video">
+            <iframe src="https://www.youtube.com/embed/3oCC4NDgYrY" title="meditación" allowfullscreen loading="lazy"> </iframe>
+        </div>
+        <buttom type="buttom">Asistencia con I.A.</buttom>
+        <br/>
+        <div class="Lecciones">
+            <div class="leccion">
+                <h4>Lección 1 - Reconociendo emociones</h4>
+                <p>Aprender a identificar las emociones básicas, ponerles nombre y entender
+                cómo se manifiestan en el cuerpo y la mente.</p>
+                <buttom type="submit">Empezar con I.A</buttom>
+        </div>
+        <div class="Lecciones">
+            <div class="leccion">
+                <h4>Lección 2 - Ejercicios prácticos</h4>
+                <p>Aprender técnicas prácticas que ayuden a gestionar y regular las emociones en
+                el día a día, disminuyendo el estrés y promoviendo el bienestar emocional.</p>
+                <buttom type="submit">Empezar con I.A</buttom>
+        </div>
+        <div class="Lecciones">
+            <div class="leccion">
+                <h4>Lección 3 - Técnicas de relajación</h4>
+                <p>Aprender y practicar formas sencillas de relajar el cuerpo y la mente,
+                    promoviendo la calma, el buen descanso y la conexión con uno mismo.</p>
+                <buttom type="submit">Empezar con I.A</buttom>
+        </div>
+        <div class="Lecciones">
+            <div class="leccion">
+                <h4>Lección 4 - Cierre y reflexión</h4>
+                <p>Repasar lo aprendido, reconocer el propio progreso y motivarse a continuar
+                aplicando las herramientas en la vida cotidiana.</p>
+                <buttom type="submit">Empezar con I.A</buttom>
+        </div>
+        
+    </section>
+    <section class="valoracion-curso">
+        <h3>¿Qué te pareció este curso?</h3>
+        <div class="estrellas">
+          <span>⭐</span>
+          <span>⭐</span>
+          <span>⭐</span>
+          <span>⭐</span>
+          <span>⭐</span>
+        </div>
+      
+        <textarea placeholder="Escribe un comentario opcional sobre tu experiencia..."></textarea>
+      
+        <button class="boton-valorar">Enviar valoración</button>
+      
+        <p class="mensaje-valorado" style="display: none; color: green; margin-top: 1rem;">
+          ¡Gracias! Ya valoraste este curso. 🙌
+        </p>
+        <div style="text-align: center; margin-top: 30px;">
+          <a href="paginaInicioAdulto.html" class="boton-retorno" title="Volver a la página principal">
+            ⬅️ Volver a inicio
+          </a>
+        </div>
+      </section>
+      <script>
+        let valorado = false;
+        const estrellas = document.querySelectorAll('.estrellas span');
+        const boton = document.querySelector('.boton-valorar');
+        const mensaje = document.querySelector('.mensaje-valorado');
+      
+        estrellas.forEach((estrella, index) => {
+          estrella.addEventListener('click', () => {
+            if (valorado) return;
+      
+            estrellas.forEach((e, i) => {
+              e.classList.toggle('hovered', i <= index);
+            });
+          });
+        });
+      
+        boton.addEventListener('click', () => {
+          if (!valorado) {
+            valorado = true;
+            boton.disabled = true;
+            boton.style.backgroundColor = '#ccc';
+            mensaje.style.display = 'block';
+          }
+        });
+      </script>
+      
+  </body>
+</html>

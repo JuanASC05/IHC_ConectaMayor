@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" href="validarContraseña.css" />
+  </head>
+  <body>
+    <section class="contenedor">
+      <img
+        src="img/LOGO_SiempreContigo.png"
+        alt="Logo Siempre Contigo"
+        class="logo"
+      />
+      <h2>Recuperar Contraseña</h2>
+      <p>
+        Ingrese su correo y una nueva contraseña para restablecer su acceso.
+      </p>
+
+      <form name="recuperarForm">
+        <label for="email">Correo electrónico:</label>
+        <input type="text" id="email" name="email" />
+
+        <label for="nuevaContra">Nueva contraseña:</label>
+        <input type="password" id="nuevaContra" name="nuevaContra" />
+
+        <label for="confirmarContra">Confirmar contraseña:</label>
+        <input type="password" id="confirmarContra" name="confirmarContra" />
+
+        <button type="submit">Actualizar contraseña</button>
+      </form>
+
+      <a href="identificacionIS.html" class="volver">← Volver al inicio</a>
+    </section>
+    <script src="validacionOlvidasteContraseña.js"></script>
+
+  </body>
+</html>

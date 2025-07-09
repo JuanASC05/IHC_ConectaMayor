@@ -59,20 +59,16 @@ input[type="password"] {
 .registro-adultoMayor a {
   width: 100%;
   padding: 0.8rem;
-  background-color: #5a90c5;
   color: #000000;
   font-size: 16px;
   border: none;
-  border-radius: 45px;
   font-family: "Habibi", serif;
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-decoration: none;
 }
 
-.registro-adultoMayor a:hover {
-  background-color: #3b72a0;
-}
+
 
 .Opciones-inicioSesion {
   margin-top: 1.5rem;
@@ -146,4 +142,27 @@ button[type="submit"]:hover {
 .registro-adultoMayor img {
   width: 200px;
   height: 200px;
+}
+
+.Opc a{
+  color: white;
+  text-decoration: none;
+}
+
+.Opc p a{
+  color: #2e5d8a;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.OpcRegistro a{
+  color: white;
+  text-decoration: none;
+}
+
+.OpcRegistro p a{
+  color: #2e5d8a;
+  text-decoration: underline;
+  font-size: 14px;
+
 }
